@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match</title>
+    <style>
+        img {
+            width: 400px;
+        }
+
+        .field {
+            border: 2px solid;
+            height: 450px;
+        }
+
+        .bat {
+            transition: translate 1s ease-in;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 500px;
+            transition: transform 1s ease-out;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-70deg);
+            transform-origin: top right;
+        }
+
+        .field:hover .ball {
+            transform: translate(800px, -350px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Now I am trying to make field to play cricket match</h1>
+    <div class="field">
+        <img class="bat" src="picture/cricket-bats.jpg" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

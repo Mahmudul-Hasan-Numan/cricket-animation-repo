@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: gold;
+                transform: scale(.5);
+                left: 0%;
+                top: 0%;
+            }
+
+            50% {
+                background-color: orangered;
+                bottom: 0%;
+                top: 90%
+            }
+
+            100% {
+                background-color: lime;
+                left: 85%;
+                top: 0%;
+            }
+
+        }
+
+        .stage {
+            height: 300px;
+            width: 600px;
+            background-color: chocolate;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: darkgreen;
+            position: relative;
+            animation: sliding 1s ease-in-out .5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Making an animation to do some fun</h1>
+    <div class="stage">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
